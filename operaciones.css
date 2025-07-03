@@ -1,0 +1,23 @@
+body {
+  background-color: #d0e7fe;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4 {
+  font-weight: 600;
+  color: #043363;
+}
+
+input[type="text"]:read-only {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+}
+
+.btn {
+  width: 100%;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+}
+
