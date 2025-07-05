@@ -2,7 +2,7 @@
 
 **Librería de Utilidades Matemáticas en JavaScript**
 
-**Integrantes del equipo:**
+**Integrantes del equipo 5:**
 - Fatima Martinez Lopez
 - Alary Guzman Jimenez
 
