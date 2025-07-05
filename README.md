@@ -112,6 +112,14 @@ Resultado con Dato Inválido.
 
 [🔗 Click aquí para ver el video de demostración en YouTube](https://youtu.be/b4sPsHCbRjg)
 
-## GitHub Pages 
+
+## Demostración en Línea - GitHub Pages
+
+Puedes probar el funcionamiento de la librería directamente aquí:
+
+[Ver demostración en línea](https://fatimamartinezlpz.github.io/LibreriaJavaScript/)
+
+
+
 
 
