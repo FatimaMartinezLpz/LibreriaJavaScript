@@ -1,4 +1,4 @@
-# mi-libreria-matematica
+# libreria-matematica
 
 **Librería de Utilidades Matemáticas en JavaScript**
 
