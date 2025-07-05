@@ -46,7 +46,13 @@ const Milib = {
   },
 
   conversorGradosADecimales: function (grados, minutos, segundos) {
-    if (isNaN(grados) || isNaN(minutos) || isNaN(segundos) || minutos < 0 || segundos < 0) return "No válido";
+    if (
+      isNaN(grados) || isNaN(minutos) || isNaN(segundos) ||
+      minutos < 0 || minutos >= 60 ||
+      segundos < 0 || segundos >= 60
+    ) {
+      return "No válido";
+    }
     return grados + (minutos / 60) + (segundos / 3600);
   },
 
