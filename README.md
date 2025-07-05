@@ -2,6 +2,11 @@
 
 **Librería de Utilidades Matemáticas en JavaScript**
 
+**Integrantes del equipo:**
+- Fatima Martinez Lopez
+- Alary Guzman Jimenez
+
+---
 ## Descripción
 
 Esta librería ofrece funciones matemáticas comunes como cálculos de área, perímetro, potencias, raíces, operaciones con listas, conversiones de ángulos y factorial. Permite simplificar operaciones matemáticas en proyectos web sin depender de frameworks externos como React, Vue o similares.
