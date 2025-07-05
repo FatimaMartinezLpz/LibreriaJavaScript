@@ -107,16 +107,6 @@ Resultado con Dato Inválido.
 
 [🔗 Click aquí para ver el video de demostración en YouTube](https://youtu.be/b4sPsHCbRjg)
 
-## GitHub Pages (opcional)
+## GitHub Pages 
 
-Si deseas una demostración en línea:
-
-1. Sube tu proyecto a GitHub.
-2. Ve a `Settings > Pages`.
-3. Selecciona la rama principal y la carpeta `/root` o `/docs` según dónde esté tu `index.html`.
-4. Obtendrás un enlace como:
-
-```markdown
-https://tuusuario.github.io/mi-libreria-matematica/
-```
 
