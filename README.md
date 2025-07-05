@@ -18,23 +18,60 @@ Incluye el archivo de la librería en tu proyecto HTML de la siguiente forma:
 
 ---
 
+
 ## Ejemplo de Uso
 
-Ejemplo básico para calcular el área de un círculo:
+A continuación se muestra cómo se implementa el cálculo del **Área de un Círculo** utilizando esta librería:
+
+### Función en el `<script>` del HTML:
 
 ```html
-<input type="number" id="radio">
-<button onclick="calcular()">Calcular Área</button>
 <script>
-function calcular() {
-  const radio = parseFloat(document.getElementById("radio").value);
-  const resultado = Milib.areaCirculo(radio);
-  alert("Área: " + resultado);
-}
+  function calcularAreaCirculo() {
+    const radio = parseFloat(document.getElementById("input1").value);
+    document.getElementById("resultado1").value = Milib.areaCirculo(radio);
+  }
 </script>
 ```
 
-Todas las funciones devuelven `"No válido"` si se ingresan datos incorrectos (como radios negativos, listas vacías o valores no numéricos).
+---
+
+### Estructura en el cuerpo del HTML:
+
+```html
+<div class="col-sm-4">
+  <h4>1. Área del Círculo</h4>
+  <p>Ingresa el radio</p>
+  <input id="input1" class="form-control mb-2" type="number" placeholder="Radio">
+  <button class="btn btn-primary mb-2" onclick="calcularAreaCirculo()">Calcular</button>
+  <input id="resultado1" class="form-control" type="text" placeholder="Resultado" readonly>
+</div>
+```
+
+---
+
+### Llamado a la función desde la librería:
+
+```js
+const Milib = {
+  areaCirculo: function (radio) {
+    if (isNaN(radio) || radio <= 0) return "No válido";
+    return Math.PI * Math.pow(radio, 2);
+  },
+  // ... otras funciones
+};
+```
+
+---
+
+## Nota
+
+Esta es la misma forma en que se implementan el resto de las funciones de la librería, siguiendo la misma estructura:
+
+ * Crear una función en el **<script>** que obtenga el valor desde un **input**.  
+ * Llamar al método correspondiente de **Milib** para realizar el cálculo.  
+ * Mostrar el resultado en un campo de solo lectura.  
+Todas las funciones devuelven **"No válido"** si se ingresan datos incorrectos (como radios negativos, listas vacías o valores no numéricos).
 
 ---
 
@@ -57,38 +94,18 @@ Todas las funciones devuelven `"No válido"` si se ingresan datos incorrectos (c
 
 ## Capturas de Pantalla
 
-*Coloca aquí las imágenes que muestren el funcionamiento de tu librería.*
+A continuación se muestran ejemplos del funcionamiento de la librería:
 
-Ejemplos de qué capturas debes agregar:
+![opreaciones1](capturas/captura1.png)
+![operaciones2](capturas/captura2.png)
 
-✅ Ejemplo de un área de círculo calculada en la consola o un `alert`.
-✅ Ejemplo mostrando el uso en el navegador con inputs y botones (puede ser el index.html corriendo).
-✅ Ejemplo de un resultado `"No válido"` al ingresar un dato incorrecto.
+Resultado con Dato Inválido.
 
-### Cómo se vería en el README (modifica las rutas según tus imágenes):
-
-```markdown
-![Ejemplo Área Círculo](capturas/area-circulo.png)
-![Ejemplo Error Dato Inválido](capturas/dato-invalido.png)
-```
-
----
+![Resultado con Dato Inválido](capturas/captura3.png)
 
 ## Video
 
-Puedes grabar un video corto (máximo 1 minuto) mostrando:
-
-* Cómo se importa la librería en un HTML.
-* Un par de operaciones funcionando (ejemplo: área de círculo, factorial, etc.).
-* Qué pasa al ingresar datos incorrectos (que devuelva `"No válido"`).
-
-Puedes subirlo a YouTube, Google Drive, o incluso dejar el archivo en el repositorio y enlazarlo así:
-
-```markdown
-[Ver video demostración](video/demo.mp4)
-```
-
----
+[🔗 Click aquí para ver el video de demostración en YouTube](https://youtu.be/b4sPsHCbRjg)
 
 ## GitHub Pages (opcional)
 
@@ -103,43 +120,3 @@ Si deseas una demostración en línea:
 https://tuusuario.github.io/mi-libreria-matematica/
 ```
 
----
-
-## Cómo agregar imágenes al README.md
-
-### Crea una carpeta dentro del repositorio llamada `capturas`:
-
-```
-mi-libreria-matematica
-│
-├── index.html
-├── miLibreria.js
-├── README.md
-└── capturas
-    ├── area-circulo.png
-    ├── dato-invalido.png
-```
-
-### Dentro del README, para que se muestren las imágenes:
-
-```markdown
-![Descripción breve](capturas/nombre-de-la-imagen.png)
-```
-
-**Ejemplo real:**
-
-```markdown
-![Cálculo de Área](capturas/area-circulo.png)
-![Dato Inválido](capturas/dato-invalido.png)
-```
-
-### Las imágenes deben estar en formato `.png` o `.jpg` y deben estar subidas al repositorio antes de que se visualicen en GitHub.
-
----
-
-```
-
-Listo, solo copia y pega todo este contenido en tu archivo `README.md` y se verá correctamente en GitHub.
-
-Si quieres te preparo un `.zip` con las carpetas, archivos y README ya listo. ¿Quieres que lo arme por ti? 🚀
-```
